@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>minongida | Dev Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Gowun+Dodum&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">// minongida</div>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <p class="hero-tag">// High School Developer · 2nd Year</p>
+  <h1 class="hero-name">Hello,<br>I'm <span>MinYoung</span>.</h1>
+  <p class="hero-sub">고등학교 2학년, 코딩이 좋아서 혼자 만들고 부수며 배우고 있습니다. 아직 배우는 중이지만, 꾸준히 성장하고 있어요.</p>
+  <div class="hero-badges">
+    <span class="hero-badge on">🏫 고등학교 2학년</span>
+    <span class="hero-badge">💻 개인 프로젝트</span>
+    <span class="hero-badge">🔗 동아리 활동</span>
+  </div>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">내 프로젝트 보기 →</a>
+    <a href="#contact" class="btn btn-outline">연락하기</a>
+  </div>
+  <div class="hero-scroll">
+    <span class="scroll-line"></span>
+    <span>scroll to explore</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label reveal">// 01. about me</p>
+  <h2 class="section-title reveal">About</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>안녕하세요! 코딩이 좋아서 시작한 <strong>고등학교 2학년</strong> 김민영입니다.</p>
+      <p>처음엔 스크래치로 시작했는데, 직접 뭔가를 만들 수 있다는 게 너무 재미있어서 계속하게 됐어요. 아직 모르는 게 훨씬 많지만, 모르면 찾아보고 만들어보는 걸 반복하면서 늘고 있습니다.</p>
+      <p>지금은 <strong>웹 개발</strong>과 <strong>앱 만들기</strong>에 관심이 많고, 학교 동아리에서도 열심히 활동 중이에요.</p>
+    </div>
+    <div class="about-now reveal">
+      <div class="about-now-title">// 지금 이 순간</div>
+      <div class="now-item">
+        <div class="now-dot"></div>
+        <div>
+          <div class="now-text">한빛누리고등학교 2학년 재학 중</div>
+          <div class="now-sub">소프트웨어 / 정보 관련 진로 희망</div>
+        </div>
+      </div>
+      <div class="now-item">
+        <div class="now-dot green"></div>
+        <div>
+          <div class="now-text">코딩 동아리 "소울인투로봇" 활동 중</div>
+          <div class="now-sub">팀 프로젝트 · 스터디</div>
+        </div>
+      </div>
+      <div class="now-item">
+        <div class="now-dot yellow"></div>
+        <div>
+          <div class="now-text">개인 프로젝트 진행 중</div>
+          <div class="now-sub">아이디어 → 직접 구현 중</div>
+        </div>
+      </div>
+      <div class="now-item">
+        <div class="now-dot red"></div>
+        <div>
+          <div class="now-text">대학 준비 &amp; 성장 중</div>
+          <div class="now-sub">컴퓨터 관련 학과 진학 희망</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label reveal">// 02. skills</p>
+  <h2 class="section-title reveal">Tech Stack</h2>
+  <div class="skills-grid">
+    <div class="reveal">
+      <div class="skill-group-title">할 줄 아는 것</div>
+      <div class="skill-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="skill-group-title">써본 적 있는 것</div>
+      <div class="skill-list">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Figma</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="skill-group-title">지금 배우는 중 🌱</div>
+      <div class="skill-list">
+        <span class="skill-tag learning">C</span>
+        <span class="skill-tag learning">DBMS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label reveal">// 03. projects</p>
+  <h2 class="section-title reveal">Projects</h2>
+  <div class="reveal">
+    <div class="proj-tabs">
+      <button class="proj-tab active" onclick="filterProj('all', this)">전체</button>
+      <button class="proj-tab" onclick="filterProj('personal', this)">💻 개인</button>
+      <button class="proj-tab" onclick="filterProj('club', this)">🔗 동아리</button>
+    </div>
+  </div>
+  <div class="projects-list">
+
+    <a href="#" class="project-card show" data-type="personal">
+      <div>
+        <div class="project-num">01 ——</div>
+        <span class="project-kind personal">💻 개인 프로젝트</span>
+        <div class="project-title">개인 클라우드</div>
+        <div class="project-desc">혼자 쓸 수 있는 클라우드 저장소를 라즈베리파이를 이용하여 만들어보았습니다.</div>
+        <div class="project-tags">
+          <span class="project-tag">RP5</span>
+          <span class="project-tag">NextCloud</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="#" class="project-card show" data-type="personal">
+      <div>
+        <div class="project-num">02 ——</div>
+        <span class="project-kind personal">💻 개인 프로젝트</span>
+        <div class="project-title">시간표 웹사이트</div>
+        <div class="project-desc">학교, 학원 등 개인 시간표를 관리하고 공유할 수 있는 웹사이트를 만들어보았습니다.</div>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">MySQL</span>          
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="#" class="project-card show" data-type="club">
+      <div>
+        <div class="project-num">03 ——</div>
+        <span class="project-kind club">🔗 동아리 프로젝트</span>
+        <div class="project-title">HoloLens & Robomaster</div>
+        <div class="project-desc">HoloLens와 Robomaster ep core을 결합하여, AR 기술과 로봇 공학을 접해보았습니다.</div>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">React</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label reveal">// 04. contact</p>
+  <h2 class="contact-headline reveal">
+    같이 만들거나,<br>이야기 나눠요 <span>:)</span>
+  </h2>
+  <div class="contact-links reveal">
+    <a href="mailto:primemichael@naver.com" class="contact-link">✉ primemichael@naver.com</a>
+    <a href="https://github.com/MinYoungida" class="contact-link" target="_blank">⌥ GitHub</a>
+    <!-- <a href="https://velog.io/@username" class="contact-link" target="_blank">✏ 개발 블로그</a> -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 minongida · 고등학교 2학년</p>
+  <p>꾸준히 업데이트 중 🚧</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
